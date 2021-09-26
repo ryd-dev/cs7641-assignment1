@@ -7,8 +7,13 @@ import time
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score, recall_score
 
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 
 
 def sample_model(model1, model2, df1, df2):
